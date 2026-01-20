@@ -37,6 +37,18 @@ body {
     overflow-x: hidden;
 }
 
+/* ========== HIDE SCROLLBAR ========== */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 /* ========== UTILITY CLASSES FOR ANIMATIONS ========== */
 
 /* Mask Up - text slides up from hidden */

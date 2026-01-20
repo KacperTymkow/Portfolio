@@ -4,7 +4,7 @@ Personal portfolio website showcasing my data science and analytics projects, ce
 
 ## 🌐 Live Demo
 
-Visit: [kacpertymkow.github.io](https://kacpertymkow.github.io)
+Visit: [kacpertymkow.github.io](https://kacpertymkow.github.io/Portfolio/)
 
 ## 🛠️ Tech Stack
 
