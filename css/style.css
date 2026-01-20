@@ -39,16 +39,19 @@ body {
 
 /* ========== HIDE SCROLLBAR ========== */
 /* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none;
+    width: 0;
+    height: 0;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
+html,
 body {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
-
 /* ========== UTILITY CLASSES FOR ANIMATIONS ========== */
 
 /* Mask Up - text slides up from hidden */
@@ -830,6 +833,17 @@ body {
     padding-top: 60px;
 }
 
+/* Hide scrollbar in experience section */
+.experience-section::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.experience-section {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .experience-container {
     max-width: 1000px;
     width: 100%;
@@ -837,6 +851,16 @@ body {
 
 .experience-header {
     margin-bottom: 60px;
+}
+
+.experience-section::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
+
+.experience-section {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .experience-title {
@@ -1202,18 +1226,4 @@ body {
     .timeline-marker {
         left: -37px;
     }
-}
-
-/* ========== CUSTOM SCROLLBAR ========== */
-::-webkit-scrollbar {
-    width: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-deep);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 2px;
 }
